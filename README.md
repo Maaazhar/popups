@@ -8,7 +8,9 @@ This is a [Next.js](https://nextjs.org/) project demonstrating a full page pup-u
 ## To set-up the project locally
 
 First, clone or download the repository,
+
 Than open the project folder with VS code,
+
 Than run the following commands,
 
 ```bash

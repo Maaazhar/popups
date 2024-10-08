@@ -144,7 +144,7 @@ const LevelUpPopUp = ({ setLevelUpButtonClicked }) => {
               text-xs lg:text-sm
             `}
           >
-            To claim your new badge, you'll need to transfer your previous badge from your wallet for it to be burned in exchange for the new one. If there's insufficient gas in your wallet, the transaction will be canceled. You can always visit your Inventory and claim your badge at any time.
+            To claim your new badge, you&aposll need to transfer your previous badge from your wallet for it to be burned in exchange for the new one. If there&aposs insufficient gas in your wallet, the transaction will be canceled. You can always visit your Inventory and claim your badge at any time.
           </p>
         </div>
       </div>
