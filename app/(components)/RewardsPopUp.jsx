@@ -72,7 +72,11 @@ const RewardsPopUp = ({ setRewardButtonClicked }) => {
             <button className="absolute top-3 right-3 w-5"
               onClick={handleClick}
             >
-              <Image src={close} alt="close" />
+              <Image
+                src={close}
+                alt="close"
+                className="transition-all hover:scale-[1.15]"
+              />
             </button>
             <div
               className={`

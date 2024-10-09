@@ -31,7 +31,11 @@ const LevelUpPopUp = ({ setLevelUpButtonClicked }) => {
       <div className="z-20">
         <button className="absolute top-5 right-5 w-6"
           onClick={handleClick}>
-          <Image src={close} alt="background" />
+          <Image
+            src={close}
+            alt="background"
+            className="transition-all hover:scale-[1.15]"
+          />
         </button>
         <div
           className={`
@@ -62,7 +66,9 @@ const LevelUpPopUp = ({ setLevelUpButtonClicked }) => {
               level up
             </h1>
           </div>
-          <Image src={LieutenantImg} alt="background" className="w-40" />
+          <div className="LieutenantImg">
+            <Image src={LieutenantImg} alt="background" className="w-40 " />
+          </div>
           <h2
             className={`
               text-3xl font-extrabold
@@ -106,8 +112,9 @@ const LevelUpPopUp = ({ setLevelUpButtonClicked }) => {
           <div className="grid place-content-center">
             <button
               className={`
-                w-fit border border-[#35241C]
-                px-6 py-2 rounded-md text-lg 
+                claimButton w-fit border 
+                px-6 py-2 border-[#35241C]
+                text-lg rounded-md
                 font-bold text-[#35241C] 
                 shadow-[0px_1px_0px_1px_#35241C] 
                 bg-gradient-to-b 

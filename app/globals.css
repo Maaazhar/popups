@@ -13,6 +13,73 @@
   animation: popup 0.6s ease-in-out;
 }
 
+.LieutenantImg {
+  position: relative;
+  transition: all 0.5s linear;
+  animation: rotate 0.2s linear 0.6s 5;
+  overflow: hidden;
+}
+.LieutenantImg::before {
+  position: absolute;
+  content: '';
+  background: #ffffff81;
+  width: 60%;
+  height: 85%;
+  top: 5%;
+  left: -125%;
+  transform: skew(45deg);
+  transition: all 0.5s ease-out;
+  animation: shine 0.35s linear 2s;
+  z-index: 30;
+}
+
+.xpBar {
+  transition: width 1s linear;
+  animation: progress 1s linear;
+}
+
+.claimButton{
+  position: relative;
+  transition: all 0.5s linear;
+  overflow: hidden;
+}
+.claimButton::before {
+  position: absolute;
+  content: '';
+  background: #ffffff81;
+  width: 40%;
+  height: 100%;
+  top: 0%;
+  left: 0%;
+  left: -125%;
+  transform: skew(45deg);
+  transition: all 0.6s ease-out;
+  z-index: 30;
+}
+.claimButton:hover::before{
+  left: 200%;
+}
+
+.rewards {
+  position: relative;
+  overflow: hidden;
+}
+.rewards::before {
+  position: absolute;
+  content: '';
+  background: #ffffff81;
+  width: 60%;
+  height: 58%;
+  top: 0%;
+  left: -125%;
+  transform: skew(45deg);
+  transition: all 0.5s ease-out;
+  animation: shine 0.3s linear 0.7s;
+  z-index: 30;
+}
+
+/* ANIMATIONS */
+
 @keyframes popup {
   0% {
     transform: scale(0.5);
@@ -27,9 +94,14 @@
   }
 }
 
-.xpBar {
-  transition: width 1s linear;
-  animation: progress 1s linear;
+@keyframes rotate {
+  from {
+    transform: rotateY(45deg);
+  }
+
+  to {
+    transform: rotateY(225deg);
+  }
 }
 
 @keyframes progress {
@@ -38,36 +110,12 @@
   }
 }
 
-.rewards {
-  position: relative;
-  overflow: hidden;
-}
-
-.rewards::before {
-  position: absolute;
-  content: '';
-  background: #ffffff81;
-  width: 60%;
-  height: 58%;
-  top: 0%;
-  left: -125%;
-  transform: skew(45deg);
-  transition: left 0.5s ease-out;
-  animation: shine 0.3s linear;
-  animation-delay: 0.6s;
-  z-index: 30;
-}
-
 @keyframes shine {
   0% {
     left: -125%;
   }
 
-  100%{
+  100% {
     left: 200%;
   }
-}
-
-.rewards::before:hover {
-  left: 150%;
 }
