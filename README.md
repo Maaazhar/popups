@@ -3,7 +3,7 @@ This is a [Next.js](https://nextjs.org/) project demonstrating a full page pup-u
 ## Technology used
 - [React JS](https://react.dev/)         (As the base JavaScript library for the project)
 - [Next JS](https://nextjs.org/)         (As the framework of React JS)
-- [Tailwind CSS](https://tailwindcss.com/)    (As the CSS library for the styling)
+- [Tailwind CSS](https://tailwindcss.com/)    (As the CSS library for styling)
 - [Github Actions](https://github.com/features/actions)  (As the testing ground and CI/CD pipeline)
 - [Github Pages](https://pages.github.com/)    (As the deployment platform)
 
