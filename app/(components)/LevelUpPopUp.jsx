@@ -17,7 +17,7 @@ const LevelUpPopUp = ({ setLevelUpButtonClicked }) => {
     <div
       className={`
         popup absolute inset-0 w-dvw h-dvh 
-        flex items-center justify-center
+        flex items-center justify-center z-10
       `}
     >
       <Image

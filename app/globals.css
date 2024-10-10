@@ -11,6 +11,12 @@
 .popup {
   transition: all 0.6s ease-in-out;
   animation: popup 0.6s ease-in-out;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.popup::-webkit-scrollbar {
+  display: none;
 }
 
 .LieutenantImg {
@@ -19,6 +25,7 @@
   animation: rotate 0.2s linear 0.6s 5;
   overflow: hidden;
 }
+
 .LieutenantImg::before {
   position: absolute;
   content: '';
@@ -38,11 +45,12 @@
   animation: progress 1s linear;
 }
 
-.claimButton{
+.claimButton {
   position: relative;
   transition: all 0.5s linear;
   overflow: hidden;
 }
+
 .claimButton::before {
   position: absolute;
   content: '';
@@ -56,7 +64,8 @@
   transition: all 0.6s ease-out;
   z-index: 30;
 }
-.claimButton:hover::before{
+
+.claimButton:hover::before {
   left: 200%;
 }
 
@@ -64,6 +73,7 @@
   position: relative;
   overflow: hidden;
 }
+
 .rewards::before {
   position: absolute;
   content: '';
